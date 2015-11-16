@@ -54,102 +54,23 @@ module.exports =
 
 	'use strict';
 
-	var _createClass = __webpack_require__(2)['default'];
-
-	var _classCallCheck = __webpack_require__(6)['default'];
+	var _classCallCheck = __webpack_require__(2)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var PrPr = (function () {
-	  function PrPr() {
-	    _classCallCheck(this, PrPr);
-	  }
+	var PrPr = function PrPr() {
+	  _classCallCheck(this, PrPr);
 
-	  _createClass(PrPr, [{
-	    key: 'init',
-	    value: function init() {
-	      console.log('init');
-	    }
-	  }]);
-
-	  return PrPr;
-	})();
+	  console.log('init');
+	};
 
 	exports['default'] = PrPr;
 	module.exports = exports['default'];
 
 /***/ },
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var _Object$defineProperty = __webpack_require__(3)["default"];
-
-	exports["default"] = (function () {
-	  function defineProperties(target, props) {
-	    for (var i = 0; i < props.length; i++) {
-	      var descriptor = props[i];
-	      descriptor.enumerable = descriptor.enumerable || false;
-	      descriptor.configurable = true;
-	      if ("value" in descriptor) descriptor.writable = true;
-
-	      _Object$defineProperty(target, descriptor.key, descriptor);
-	    }
-	  }
-
-	  return function (Constructor, protoProps, staticProps) {
-	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-	    if (staticProps) defineProperties(Constructor, staticProps);
-	    return Constructor;
-	  };
-	})();
-
-	exports.__esModule = true;
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	module.exports = { "default": __webpack_require__(4), __esModule: true };
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var $ = __webpack_require__(5);
-	module.exports = function defineProperty(it, key, desc) {
-	  return $.setDesc(it, key, desc);
-	};
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	var $Object = Object;
-	module.exports = {
-	  create: $Object.create,
-	  getProto: $Object.getPrototypeOf,
-	  isEnum: ({}).propertyIsEnumerable,
-	  getDesc: $Object.getOwnPropertyDescriptor,
-	  setDesc: $Object.defineProperty,
-	  setDescs: $Object.defineProperties,
-	  getKeys: $Object.keys,
-	  getNames: $Object.getOwnPropertyNames,
-	  getSymbols: $Object.getOwnPropertySymbols,
-	  each: [].forEach
-	};
-
-/***/ },
-/* 6 */
 /***/ function(module, exports) {
 
 	"use strict";

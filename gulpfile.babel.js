@@ -31,12 +31,19 @@ gulp.task('webpack-browser', () => {
 
 gulp.task('webpack-build', ['webpack-browser', 'webpack-commonjs'])
 
+gulp.task('reload', () => {
+  gulp.src('./dist/*.js')
+    .pipe(reload())
+})
 
 gulp.task('watch', () => {
   reload.listen()
-  gulp.watch('./src/**/*', ['webpack-build'])
+  gulp.watch('./dist/*.js', ['reload'])
+  gulp.watch('./static/*.jade', ['jade'])
 })
 
 gulp.task('build', ['webpack-build', 'jade'])
 
-gulp.task('default', ['build', 'watch', 'serve'])
+gulp.task('build-browser', ['webpack-browser', 'jade'])
+
+gulp.task('default', ['jade', 'watch', 'serve'])

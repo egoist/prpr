@@ -27,6 +27,7 @@
     "babel-core": "^5.8.34",
     "babel-loader": "^5.3.3",
     "babel-runtime": "^5.8.25",
+    "dom-delegate": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
     "gulp-livereload": "^3.8.1",

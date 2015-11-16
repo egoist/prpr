@@ -4,4 +4,11 @@ html
     meta(charset="utf-8")
     title PrPr: Preload and Predict the future data
   body
+    .main
+      a(href="/data.html") Replace HTML
     script(src="/dist/prpr.min.js?v=#{time}")
+    script.
+      const prpr = new PrPr({
+        el: 'a',
+        defaultTrigger: 'hover'  
+      })
