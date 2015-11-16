@@ -1,0 +1,37 @@
+{
+  "name": "prpr",
+  "version": "0.0.0",
+  "description": "Preload and Predict the future data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commonjs": "webpack --config webpack.commonjs.js",
+    "browser": "webpack --config webpack.browser.js",
+    "commonjs-dev": "webpack --config webpack.commonjs.js --watch",
+    "browser-dev": "webpack --config webpack.browser.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoist/prpr.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "EGOIST",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egoist/prpr/issues"
+  },
+  "homepage": "https://github.com/egoist/prpr#readme",
+  "devDependencies": {
+    "babel-core": "^5.8.34",
+    "babel-loader": "^5.3.3",
+    "babel-runtime": "^5.8.25",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-serve": "^1.2.0",
+    "shelljs": "^0.5.3",
+    "webpack": "^1.12.6"
+  }
+}
