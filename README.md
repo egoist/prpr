@@ -4,7 +4,7 @@
 
 ## So what is it?
 
-Why should we always load remote data only when users make some actions? You can preload the data users may need when they enter a new page when the document is ready or some links are hovered. Then you replace the content with the data you fetched asynchronously.
+Why should we always load remote data only when users make some actions? You can preload the data users may need when they enter a new page once the document is ready or some links are hovered. Then you replace the content with the data you fetched asynchronously.
 
 But this is still **not** enough.
 
